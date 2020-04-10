@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component type="desktop">
+  <id>org.kde.trainer.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>LGPL-3.0</project_license>
+  <name>Trainer</name>
+  <summary>Simple Sport Trainer</summary>
+  <description>
+    <p> A simple application to help doing sport exercises to train (bodybuilding, stretching, ...). </p>
+  </description>
+  <url type="homepage">https://community.kde.org/Trainer</url>
+  <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?product=itrainer</url>
+  <url type="donation">https://www.kde.org/community/donations</url>
+  <url type="help">https://docs.kde.org/?application=trainer</url>
+  <provides>
+    <binary>trainer</binary>
+  </provides>
+  <project_group>KDE</project_group>
+  <content_rating type="oars-1.0"/>
+</component>

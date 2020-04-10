@@ -1,0 +1,10 @@
+[Desktop Entry]
+Categories=Qt;KDE
+Comment=
+Exec=trainer %U
+GenericName=Sport Coach
+Icon=trainer
+Name=Trainer
+StartupNotify=false
+Terminal=false
+Type=Application
