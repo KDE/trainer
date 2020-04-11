@@ -27,52 +27,9 @@ Kirigami.ApplicationWindow {
         title: mainWindow.title
 
         actions: [
-           Kirigami.Action {
-               text: "View"
-               iconName: "view-list-icons"
-               Kirigami.Action {
-                       text: "action 1"
-               }
-               Kirigami.Action {
-                       text: "action 2"
-               }
-               Kirigami.Action {
-                       text: "action 3"
-               }
-           },
-           Kirigami.Action {
-               text: "Sync"
-               iconName: "folder-sync"
-           }
         ]
-    }
-
-    contextDrawer: Kirigami.ContextDrawer {
-        id: contextDrawer
     }
 
     pageStack.initialPage: ExercisesCollection {
-        mainAction: Kirigami.Action {
-            iconName: "edit"
-            onTriggered: {
-                // do stuff
-            }
-        }
-        contextualActions: [
-            Kirigami.Action {
-                iconName: "edit"
-                text: "Action text"
-                onTriggered: {
-                    // do stuff
-                }
-            },
-            Kirigami.Action {
-                iconName: "edit"
-                text: "Action text"
-                onTriggered: {
-                    // do stuff
-                }
-            }
-        ]
     }
 }

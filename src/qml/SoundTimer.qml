@@ -12,11 +12,16 @@ import QtMultimedia 5.12
 Item {
     property alias currentTime: internalTimer.loopCounter
     property int duration: 40
+    property alias running: internalTimer.running
 
     function start() {
         internalTimer.loopCounter = -4
         smallBeepSound.play()
-        internalTimer.running = true
+        internalTimer.start()
+    }
+
+    function stop() {
+        internalTimer.stop()
     }
 
     Audio {

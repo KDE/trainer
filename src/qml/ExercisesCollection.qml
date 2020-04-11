@@ -8,29 +8,87 @@
 
 import QtQuick 2.12
 import QtQuick.Controls 2.5
+import QtQuick.Layouts 1.12
 import org.kde.kirigami 2.5 as Kirigami
 
 Kirigami.Page {
-    Button {
+    mainAction: Kirigami.Action {
         text: i18n("Start")
+        iconName: "play"
         enabled: !soundTimer.running
-
-        onClicked: {
+        onTriggered: {
             if (!soundTimer.running) {
                 soundTimer.start()
+                reportProgressDrawer.open()
             }
         }
     }
 
-    SoundTimer {
-        id: soundTimer
+    ListView {
+        anchors.fill: parent
+
+        header: Kirigami.ItemViewHeader {
+            title: i18n("List of Exercises")
+        }
+
+        model: exercisesModel
+
+        delegate: Kirigami.BasicListItem {
+            text: model.name
+        }
     }
 
-    TimeDisplay {
-        id: timeDisplay
+    ListModel {
+        id: exercisesModel
 
-        time: soundTimer.currentTime
+        ListElement {
+            name: "Apple"
+            cost: 2.45
+        }
+        ListElement {
+            name: "Orange"
+            cost: 3.25
+        }
+        ListElement {
+            name: "Banana"
+            cost: 1.95
+        }
+    }
 
-        anchors.centerIn: parent
+    Drawer {
+        id: reportProgressDrawer
+
+        width: parent.width
+        height: parent.height * 0.75
+
+        edge: Qt.BottomEdge
+        interactive: false
+
+        ColumnLayout {
+            anchors.fill: parent
+
+            TimeDisplay {
+                id: timeDisplay
+
+                time: soundTimer.currentTime
+
+                Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
+            }
+
+            Button {
+                text: i18n("Stop")
+
+                onClicked: {
+                    soundTimer.stop()
+                    reportProgressDrawer.close()
+                }
+
+                Layout.alignment: Qt.AlignHCenter | Qt.AlignBottom
+            }
+        }
+
+        SoundTimer {
+            id: soundTimer
+        }
     }
 }
