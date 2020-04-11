@@ -42,16 +42,25 @@ Kirigami.Page {
         id: exercisesModel
 
         ListElement {
-            name: "Apple"
-            cost: 2.45
+            name: i18n("Do push-ups")
         }
         ListElement {
-            name: "Orange"
-            cost: 3.25
+            name: i18n("Plank")
         }
         ListElement {
-            name: "Banana"
-            cost: 1.95
+            name: i18n("Left side plank")
+        }
+        ListElement {
+            name: i18n("Right side plank")
+        }
+        ListElement {
+            name: i18n("Extended plank")
+        }
+        ListElement {
+            name: i18n("Crunch")
+        }
+        ListElement {
+            name: i18n("Bicycle crunch")
         }
     }
 
