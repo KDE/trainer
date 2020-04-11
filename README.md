@@ -4,5 +4,7 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 -->
 
-# Train
+# Trainer
+
+This application can help you practive sport exercises that have a description and duration.
 
