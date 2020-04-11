@@ -19,6 +19,25 @@ Label {
 
     horizontalAlignment: Text.Right
 
+    onTimeChanged: onChangeEffect.start()
+
+    SequentialAnimation {
+        id: onChangeEffect
+
+        ScaleAnimator {
+            target: timerText
+            from: 1
+            to: 1.1
+            duration: 150
+        }
+        ScaleAnimator {
+            target: timerText
+            from: 1.1
+            to: 1.
+            duration: 80
+        }
+    }
+
     Timer {
         id: dateTimer
 
