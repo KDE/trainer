@@ -8,6 +8,7 @@ set(trainer_SOURCES
     main.cpp
 
     qml/TrainerMainWindow.qml
+    qml/ExercisesCollection.qml
 )
 
 qt5_add_resources(trainer_SOURCES resources.qrc)

@@ -51,7 +51,7 @@ Kirigami.ApplicationWindow {
         id: contextDrawer
     }
 
-    pageStack.initialPage: Kirigami.Page {
+    pageStack.initialPage: ExercisesCollection {
         mainAction: Kirigami.Action {
             iconName: "edit"
             onTriggered: {
