@@ -41,26 +41,14 @@ Kirigami.Page {
     ListModel {
         id: exercisesModel
 
-        ListElement {
-            name: i18n("Do push-ups")
-        }
-        ListElement {
-            name: i18n("Plank")
-        }
-        ListElement {
-            name: i18n("Left side plank")
-        }
-        ListElement {
-            name: i18n("Right side plank")
-        }
-        ListElement {
-            name: i18n("Extended plank")
-        }
-        ListElement {
-            name: i18n("Crunch")
-        }
-        ListElement {
-            name: i18n("Bicycle crunch")
+        Component.onCompleted: {
+            append({name: i18n("Do push-ups")})
+            append({name: i18n("Plank")})
+            append({name: i18n("Left side plank")})
+            append({name: i18n("Right side plank")})
+            append({name: i18n("Extended plank")})
+            append({name: i18n("Crunch")})
+            append({name: i18n("Bicycle crunch")})
         }
     }
 
