@@ -5,5 +5,7 @@
         <file>sound/double.wav</file>
         <file>sound/long.wav</file>
         <file>sound/clock.wav</file>
+        <file>qml/SoundTimer.qml</file>
+        <file>qml/TimeDisplay.qml</file>
     </qresource>
 </RCC>

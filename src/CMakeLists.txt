@@ -9,6 +9,8 @@ set(trainer_SOURCES
 
     qml/TrainerMainWindow.qml
     qml/ExercisesCollection.qml
+    qml/SoundTimer.qml
+    qml/TimeDisplay.qml
 )
 
 qt5_add_resources(trainer_SOURCES resources.qrc)
