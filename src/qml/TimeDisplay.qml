@@ -14,7 +14,6 @@ Label {
 
     property int time: 0
 
-    anchors.centerIn: parent
     text: '00:00'
     font.pointSize: 20
 

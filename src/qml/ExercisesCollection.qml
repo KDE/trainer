@@ -30,5 +30,7 @@ Kirigami.Page {
         id: timeDisplay
 
         time: soundTimer.currentTime
+
+        anchors.centerIn: parent
     }
 }
