@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: (c) 2020 Matthieu Gallien <matthieu_gallien@yahoo.fr>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
 cmake_minimum_required(VERSION 3.8)
 
 project(trainer
@@ -7,7 +11,7 @@ project(trainer
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_STANDARD 17)
 
-set(REQUIRED_QT_VERSION "5.14.0")
+set(REQUIRED_QT_VERSION "5.12.0")
 find_package(Qt5 ${REQUIRED_QT_VERSION} CONFIG REQUIRED Core Qml Quick Test Multimedia Gui QuickTest QuickControls2)
 
 set(REQUIRED_KF5_VERSION "5.60.0")
@@ -65,11 +69,9 @@ include(ECMGenerateHeaders)
 include(CMakePackageConfigHelpers)
 
 add_subdirectory(src)
-add_subdirectory(icons)
 if (BUILD_TESTING)
     add_subdirectory(autotests)
 endif()
-add_subdirectory(doc)
 
 install(
     PROGRAMS org.kde.trainer.desktop
