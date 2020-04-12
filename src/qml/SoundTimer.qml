@@ -12,11 +12,20 @@ import QtMultimedia 5.12
 Item {
     property alias currentTime: internalTimer.loopCounter
     property int duration: 40
+    property int beforeEndDuration: 5
+    property int preparingDuration: 5
+    property int silentPreparingDuration: 0
     property alias running: internalTimer.running
 
+    signal finished()
+
     function start() {
-        internalTimer.loopCounter = -4
-        smallBeepSound.play()
+        internalTimer.loopCounter = 1 - preparingDuration - silentPreparingDuration
+
+        if (!silentPreparingDuration) {
+            smallBeepSound.play()
+        }
+
         internalTimer.start()
     }
 
@@ -52,17 +61,22 @@ Item {
         running: false
 
         onTriggered: {
-            ++loopCounter
-            if (loopCounter < 0 || (loopCounter >= duration - 5 && loopCounter < duration)) {
+            if (loopCounter < duration) {
+                ++loopCounter
+            } else {
+                internalTimer.running = false
+                finished()
+                return
+            }
+
+            if ((loopCounter >= -preparingDuration && loopCounter < 0) || (loopCounter >= duration - beforeEndDuration && loopCounter < duration)) {
                 smallBeepSound.play()
             } else if (loopCounter == 0) {
                 longBeepSound.play()
             } else if (loopCounter == duration) {
                 longBeepSound.play()
-            } else if (loopCounter > 0 && loopCounter < duration - 5) {
+            } else if (loopCounter > 0 && loopCounter < duration - beforeEndDuration) {
                 clockSound.play()
-            } else {
-                internalTimer.running = false
             }
         }
     }

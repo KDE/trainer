@@ -19,7 +19,7 @@ Label {
 
     horizontalAlignment: Text.Right
 
-    onTimeChanged: onChangeEffect.start()
+    onTimeChanged: onChangeEffect.restart()
 
     SequentialAnimation {
         id: onChangeEffect
@@ -46,13 +46,17 @@ Label {
         running: true
 
         onTriggered: {
-            if (timerText.time < 0) {
-                timerText.text = '- 00:0' + Math.abs(timerText.time)
+            if (timerText.time < 0 && timerText.time > -60) {
+                let date = new Date(0)
+                date.setSeconds(Math.abs(timerText.time))
+                let timeString = date.toISOString().substr(14, 5)
+                timerText.text = timeString
+                timerText.text = '- ' + timeString
             } else {
-                var date = new Date(0)
+                let date = new Date(0)
                 date.setSeconds(timerText.time % 60)
                 date.setMinutes(timerText.time / 60)
-                var timeString = date.toISOString().substr(14, 5)
+                let timeString = date.toISOString().substr(14, 5)
                 timerText.text = timeString
             }
         }

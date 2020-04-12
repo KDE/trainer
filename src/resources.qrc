@@ -7,5 +7,6 @@
         <file>sound/clock.wav</file>
         <file>qml/SoundTimer.qml</file>
         <file>qml/TimeDisplay.qml</file>
+        <file>qml/ExercisesRunnerDrawer.qml</file>
     </qresource>
 </RCC>
