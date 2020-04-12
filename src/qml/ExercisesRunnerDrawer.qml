@@ -64,6 +64,14 @@ Drawer {
             Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
         }
 
+        Kirigami.Heading {
+            id: currentExerciseIndexLabel
+
+            text: i18n("%1 / %2", currentExerciseIndex + 1, exercisesListModel.count)
+
+            Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
+        }
+
         Button {
             text: i18n("Stop")
 
