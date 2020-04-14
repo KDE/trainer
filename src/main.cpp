@@ -26,6 +26,7 @@
 #include <QQmlFileSelector>
 #include <QQuickStyle>
 #include <QQmlContext>
+#include <QTextToSpeech>
 
 #if defined Q_OS_ANDROID
 int __attribute__((visibility("default"))) main(int argc, char *argv[])
@@ -86,6 +87,8 @@ int main(int argc, char *argv[])
     decl.setDeclarativeEngine(&engine);
     decl.setupEngine(&engine);
     decl.setupContext();
+
+    qmlRegisterType<QTextToSpeech>("org.kde.trainer", 1, 0, "TextToSpeech");
 
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
 

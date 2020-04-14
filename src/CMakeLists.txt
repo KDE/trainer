@@ -22,6 +22,7 @@ target_link_libraries(trainer
     LINK_PRIVATE
     Qt5::Gui
     Qt5::QuickControls2
+    Qt5::TextToSpeech
     KF5::I18n
     KF5::ConfigCore
     KF5::Crash

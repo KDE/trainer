@@ -12,7 +12,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_STANDARD 17)
 
 set(REQUIRED_QT_VERSION "5.12.0")
-find_package(Qt5 ${REQUIRED_QT_VERSION} CONFIG REQUIRED Core Qml Quick Test Multimedia Gui QuickTest QuickControls2)
+find_package(Qt5 ${REQUIRED_QT_VERSION} CONFIG REQUIRED Core Qml Quick Test Multimedia Gui QuickTest QuickControls2 TextToSpeech)
 
 set(REQUIRED_KF5_VERSION "5.60.0")
 find_package(ECM ${REQUIRED_KF5_VERSION} REQUIRED NO_MODULE)
