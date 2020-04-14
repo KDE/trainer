@@ -44,7 +44,6 @@ Drawer {
         soundTimer.duration = exercisesListModel.get(currentExerciseIndex).duration
         exerciseName = exercisesListModel.get(currentExerciseIndex).name
         soundTimer.start()
-        speech.say(exerciseName)
     }
 
     ColumnLayout {
@@ -98,6 +97,8 @@ Drawer {
                 theDrawer.close()
             }
         }
+
+        onAlmostStarted: speech.say(exerciseName)
     }
 
     Trainer.TextToSpeech {

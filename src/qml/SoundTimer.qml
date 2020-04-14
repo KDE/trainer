@@ -18,6 +18,7 @@ Item {
     property alias running: internalTimer.running
 
     signal finished()
+    signal almostStarted()
 
     function start() {
         internalTimer.loopCounter = 1 - preparingDuration - silentPreparingDuration
@@ -61,6 +62,10 @@ Item {
         running: false
 
         onTriggered: {
+            if (loopCounter == -preparingDuration + 1) {
+                almostStarted()
+            }
+
             if (loopCounter < duration) {
                 ++loopCounter
             } else {
