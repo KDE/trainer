@@ -8,6 +8,8 @@
 
 //#define QT_QML_DEBUG
 
+#include "exercisefile.h"
+
 #include <KDeclarative/KDeclarative>
 #include <KQuickAddons/QtQuickSettings>
 
@@ -89,6 +91,7 @@ int main(int argc, char *argv[])
     decl.setupContext();
 
     qmlRegisterType<QTextToSpeech>("org.kde.trainer", 1, 0, "TextToSpeech");
+    qmlRegisterType<ExerciseFile>("org.kde.trainer", 1, 0, "ExerciseFile");
 
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
 

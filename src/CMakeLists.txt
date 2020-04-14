@@ -6,6 +6,8 @@ include_directories(${trainer_BINARY_DIR})
 
 set(trainer_SOURCES
     main.cpp
+    exercisefile.cpp
+    exercisefile.h
 
     qml/TrainerMainWindow.qml
     qml/ExercisesCollection.qml
