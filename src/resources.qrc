@@ -2,11 +2,12 @@
     <qresource prefix="/">
         <file>qml/TrainerMainWindow.qml</file>
         <file>qml/ExercisesCollection.qml</file>
-        <file>sound/double.wav</file>
-        <file>sound/long.wav</file>
-        <file>sound/clock.wav</file>
         <file>qml/SoundTimer.qml</file>
         <file>qml/TimeDisplay.qml</file>
         <file>qml/ExercisesRunnerDrawer.qml</file>
+        <file>sound/double.wav</file>
+        <file>sound/long.wav</file>
+        <file>sound/clock.wav</file>
+        <file>data/simple.json</file>
     </qresource>
 </RCC>

@@ -1,0 +1,32 @@
+{
+    "steps": [
+        {
+            "name": "Do push-ups",
+            "duration": 40
+        },
+        {
+            "name": "Plank",
+            "duration": 40
+        },
+        {
+            "name": "Left side plank",
+            "duration": 40
+        },
+        {
+            "name": "Right side plank",
+            "duration": 40
+        },
+        {
+            "name": "Extended plank",
+            "duration": 40
+        },
+        {
+            "name": "Crunch",
+            "duration": 40
+        },
+        {
+            "name": "Bicycle crunch",
+            "duration": 40
+        }
+    ]
+}

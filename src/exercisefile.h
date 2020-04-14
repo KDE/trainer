@@ -1,41 +1,61 @@
+/*
+
+# SPDX-FileCopyrightText: (c) 2020 Matthieu Gallien <matthieu_gallien@yahoo.fr>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+*/
+
 #ifndef EXERCISEFILE_H
 #define EXERCISEFILE_H
 
 #include <QObject>
 #include <QUrl>
+#include <QFile>
+#include <QFileInfo>
 
 class ExerciseFile : public QObject
 {
     Q_OBJECT
 
-    Q_PROPERTY(QUrl fileName READ fileName WRITE setFileName NOTIFY fileNameChanged)
+    Q_PROPERTY(QUrl name READ name WRITE setName NOTIFY nameChanged)
+
+    Q_PROPERTY(bool isValid READ isValid NOTIFY isValidChanged)
+
+    Q_PROPERTY(QString data READ data NOTIFY dataChanged)
 public:
     explicit ExerciseFile(QObject *parent = nullptr);
 
-    [[nodiscard]] QUrl fileName() const
+    [[nodiscard]] QUrl name() const
     {
-        return mFileName;
+        return mName;
     }
+
+    [[nodiscard]] bool isValid() const;
+
+    [[nodiscard]] QString data();
 
 Q_SIGNALS:
 
-    void fileNameChanged();
+    void nameChanged();
+
+    void isValidChanged();
+
+    void dataChanged();
 
 public Q_SLOTS:
 
-    void setFileName(QUrl name)
-    {
-        if (name == mFileName) {
-            return;
-        }
-
-        mFileName = name;
-        Q_EMIT fileNameChanged();
-    }
+    void setName(QUrl name);
 
 private:
 
-    QUrl mFileName;
+    QUrl mName;
+
+    QFile mFile;
+
+    QFileInfo mFileInfo;
+
+    bool mIsValid = false;
 
 };
 

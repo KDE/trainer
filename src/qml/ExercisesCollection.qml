@@ -11,8 +11,11 @@ import QtQuick.Controls 2.5
 import QtQuick.Layouts 1.12
 import QtQml.Models 2.12
 import org.kde.kirigami 2.5 as Kirigami
+import org.kde.trainer 1.0 as Trainer
 
 Kirigami.Page {
+    property alias exerciseFilename: file.name
+
     mainAction: Kirigami.Action {
         text: i18n("Start")
         iconName: "play"
@@ -41,16 +44,10 @@ Kirigami.Page {
 
     ListModel {
         id: exercisesModel
+    }
 
-        Component.onCompleted: {
-            append({name: i18n("Do push-ups"), duration: 40})
-            append({name: i18n("Plank"), duration: 40})
-            append({name: i18n("Left side plank"), duration: 40})
-            append({name: i18n("Right side plank"), duration: 40})
-            append({name: i18n("Extended plank"), duration: 40})
-            append({name: i18n("Crunch"), duration: 40})
-            append({name: i18n("Bicycle crunch"), duration: 40})
-        }
+    Trainer.ExerciseFile {
+        id: file
     }
 
     ExercisesRunnerDrawer {
@@ -63,5 +60,14 @@ Kirigami.Page {
 
         width: parent.width
         height: parent.height * 0.85
+    }
+
+    Component.onCompleted: {
+        if (file.isValid) {
+            let json = JSON.parse(file.data)
+            json.steps.forEach(function(oneExercise) {
+                exercisesModel.append(oneExercise)
+            })
+        }
     }
 }

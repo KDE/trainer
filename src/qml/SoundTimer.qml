@@ -36,19 +36,19 @@ Item {
 
     Audio {
         id: smallBeepSound
-        source: "qrc:/sound/double.wav"
+        source: Qt.resolvedUrl("/sound/double.wav")
         volume: 0.5
     }
 
     Audio {
         id: longBeepSound
-        source: "qrc:/sound/long.wav"
+        source: Qt.resolvedUrl("/sound/long.wav")
         volume: 0.5
     }
 
     Audio {
         id: clockSound
-        source: "qrc:/sound/clock.wav"
+        source: Qt.resolvedUrl("/sound/clock.wav")
         volume: 0.5
     }
 

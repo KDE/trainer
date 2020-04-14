@@ -31,5 +31,6 @@ Kirigami.ApplicationWindow {
     }
 
     pageStack.initialPage: ExercisesCollection {
+        exerciseFilename: Qt.resolvedUrl('/data/simple.json')
     }
 }
