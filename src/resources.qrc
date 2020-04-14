@@ -9,5 +9,7 @@
         <file>sound/long.wav</file>
         <file>sound/clock.wav</file>
         <file>data/simple.json</file>
+        <file>qml/OneExercise.qml</file>
+        <file>data/short.json</file>
     </qresource>
 </RCC>

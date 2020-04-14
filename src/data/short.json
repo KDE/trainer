@@ -1,0 +1,16 @@
+{
+    "steps": [
+        {
+            "name": "Do push-ups",
+            "duration": 40
+        },
+        {
+            "name": "Plank",
+            "duration": 40
+        },
+        {
+            "name": "Extended plank",
+            "duration": 40
+        }
+    ]
+}
