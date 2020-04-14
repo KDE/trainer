@@ -8,4 +8,4 @@
 
 This application can help you practive sport exercises that have a description and duration.
 
-![Screenshot Trainer on desktop](https://community.kde.org/File:Screenshot_20200414_233644.png)
+![Screenshot Trainer on desktop](https://community.kde.org/images.community/1/1a/Screenshot_20200414_233644.png)
