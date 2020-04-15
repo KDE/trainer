@@ -13,7 +13,7 @@ import QtQml.Models 2.12
 import org.kde.kirigami 2.5 as Kirigami
 import org.kde.trainer 1.0 as Trainer
 
-Kirigami.Page {
+Kirigami.ScrollablePage {
     property alias exerciseFilename: file.name
 
     mainAction: Kirigami.Action {
