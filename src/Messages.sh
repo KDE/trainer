@@ -4,4 +4,4 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-$XGETTEXT $(find . -a \( -name \*.qml -o -name \*.cpp -o -name \*.h \)) -o $podir/trainer.pot
+$XGETTEXT $(find . \( -name \*.qml -o -name \*.cpp -o -name \*.h \)) -o $podir/trainer.pot
