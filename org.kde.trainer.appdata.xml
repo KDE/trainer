@@ -1,19 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <!--
 # SPDX-FileCopyrightText: (c) 2020 Matthieu Gallien <matthieu_gallien@yahoo.fr>
 #
 # SPDX-License-Identifier: CC0-1.0
 -->
-	
 <component type="desktop">
   <id>org.kde.trainer.desktop</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>LGPL-3.0</project_license>
   <name>Trainer</name>
+  <name xml:lang="ca">Entrenador</name>
+  <name xml:lang="et">Treener</name>
+  <name xml:lang="it">Allenatore</name>
+  <name xml:lang="nl">Trainer</name>
+  <name xml:lang="uk">Тренер</name>
+  <name xml:lang="x-test">xxTrainerxx</name>
   <summary>Simple Sport Trainer</summary>
+  <summary xml:lang="ca">Un entrenador esportiu senzill</summary>
+  <summary xml:lang="et">Lihtne sporditreener</summary>
+  <summary xml:lang="it">Semplice allenatore sportivo</summary>
+  <summary xml:lang="nl">Eenvoudige sporttrainer</summary>
+  <summary xml:lang="uk">Простий спортивний тренер</summary>
+  <summary xml:lang="x-test">xxSimple Sport Trainerxx</summary>
   <description>
     <p> A simple application to help doing sport exercises to train (bodybuilding, stretching, ...). </p>
+    <p xml:lang="ca">Una aplicació per ajudar a fer exercicis esportius d'entrenament (tonificació, estiraments,...).</p>
+    <p xml:lang="et">Lihtne rakendus, mis aitab sooritada spordiharjutusi (venitused, kõutreening jms)</p>
+    <p xml:lang="it">Una semplice applicazione di supporto per allenarsi facendo esercizi sportivi (culturismo, allungamento, ...).</p>
+    <p xml:lang="nl">Een eenvoudige toepassing om te helpen bij sportoefeningen om te trainen bodybuilding, stretchen, ...).</p>
+    <p xml:lang="uk">Проста програма, яка допоможе вам тренуватися (бодібілдинґ, зарядка тощо)</p>
+    <p xml:lang="x-test">xxA simple application to help doing sport exercises to train (bodybuilding, stretching, ...).xx</p>
   </description>
   <url type="homepage">https://community.kde.org/Trainer</url>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?product=itrainer</url>
