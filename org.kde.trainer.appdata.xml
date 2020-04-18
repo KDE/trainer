@@ -13,6 +13,7 @@
   <name xml:lang="et">Treener</name>
   <name xml:lang="it">Allenatore</name>
   <name xml:lang="nl">Trainer</name>
+  <name xml:lang="pt">Trainer</name>
   <name xml:lang="uk">Тренер</name>
   <name xml:lang="x-test">xxTrainerxx</name>
   <summary>Simple Sport Trainer</summary>
@@ -20,6 +21,7 @@
   <summary xml:lang="et">Lihtne sporditreener</summary>
   <summary xml:lang="it">Semplice allenatore sportivo</summary>
   <summary xml:lang="nl">Eenvoudige sporttrainer</summary>
+  <summary xml:lang="pt">Treinador Desportivo Simples</summary>
   <summary xml:lang="uk">Простий спортивний тренер</summary>
   <summary xml:lang="x-test">xxSimple Sport Trainerxx</summary>
   <description>
@@ -28,6 +30,7 @@
     <p xml:lang="et">Lihtne rakendus, mis aitab sooritada spordiharjutusi (venitused, kõutreening jms)</p>
     <p xml:lang="it">Una semplice applicazione di supporto per allenarsi facendo esercizi sportivi (culturismo, allungamento, ...).</p>
     <p xml:lang="nl">Een eenvoudige toepassing om te helpen bij sportoefeningen om te trainen bodybuilding, stretchen, ...).</p>
+    <p xml:lang="pt">Uma aplicação simples que ajuda a fazer alguns exercícios desportivos para treinar (musculação, alongamentos, ...).</p>
     <p xml:lang="uk">Проста програма, яка допоможе вам тренуватися (бодібілдинґ, зарядка тощо)</p>
     <p xml:lang="x-test">xxA simple application to help doing sport exercises to train (bodybuilding, stretching, ...).xx</p>
   </description>
