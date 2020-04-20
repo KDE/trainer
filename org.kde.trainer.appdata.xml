@@ -10,6 +10,7 @@
   <project_license>LGPL-3.0</project_license>
   <name>Trainer</name>
   <name xml:lang="ca">Entrenador</name>
+  <name xml:lang="es">Trainer</name>
   <name xml:lang="et">Treener</name>
   <name xml:lang="it">Allenatore</name>
   <name xml:lang="nl">Trainer</name>
@@ -18,6 +19,7 @@
   <name xml:lang="x-test">xxTrainerxx</name>
   <summary>Simple Sport Trainer</summary>
   <summary xml:lang="ca">Un entrenador esportiu senzill</summary>
+  <summary xml:lang="es">Sencillo entrenador deportivo</summary>
   <summary xml:lang="et">Lihtne sporditreener</summary>
   <summary xml:lang="it">Semplice allenatore sportivo</summary>
   <summary xml:lang="nl">Eenvoudige sporttrainer</summary>
@@ -27,6 +29,7 @@
   <description>
     <p> A simple application to help doing sport exercises to train (bodybuilding, stretching, ...). </p>
     <p xml:lang="ca">Una aplicació per ajudar a fer exercicis esportius d'entrenament (tonificació, estiraments,...).</p>
+    <p xml:lang="es">Una sencilla aplicación para ayudarle a hacer ejercicios de entrenamiento (musculación, estiramientos, etc.).</p>
     <p xml:lang="et">Lihtne rakendus, mis aitab sooritada spordiharjutusi (venitused, kõutreening jms)</p>
     <p xml:lang="it">Una semplice applicazione di supporto per allenarsi facendo esercizi sportivi (culturismo, allungamento, ...).</p>
     <p xml:lang="nl">Een eenvoudige toepassing om te helpen bij sportoefeningen om te trainen bodybuilding, stretchen, ...).</p>
