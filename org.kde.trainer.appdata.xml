@@ -19,6 +19,7 @@
   <name xml:lang="ko">Trainer</name>
   <name xml:lang="nl">Trainer</name>
   <name xml:lang="pt">Trainer</name>
+  <name xml:lang="sk">Trainer</name>
   <name xml:lang="sv">Trainer</name>
   <name xml:lang="uk">Тренер</name>
   <name xml:lang="x-test">xxTrainerxx</name>
@@ -32,6 +33,7 @@
   <summary xml:lang="ko">간단한 스포츠 트레이너</summary>
   <summary xml:lang="nl">Eenvoudige sporttrainer</summary>
   <summary xml:lang="pt">Treinador Desportivo Simples</summary>
+  <summary xml:lang="sk">Jednoduchý športový tréner</summary>
   <summary xml:lang="sv">Enkel sporttränare</summary>
   <summary xml:lang="uk">Простий спортивний тренер</summary>
   <summary xml:lang="x-test">xxSimple Sport Trainerxx</summary>
