@@ -20,6 +20,7 @@
   <name xml:lang="nl">Trainer</name>
   <name xml:lang="pt">Trainer</name>
   <name xml:lang="sk">Trainer</name>
+  <name xml:lang="sl">Trainer</name>
   <name xml:lang="sv">Trainer</name>
   <name xml:lang="uk">Тренер</name>
   <name xml:lang="x-test">xxTrainerxx</name>
@@ -34,6 +35,7 @@
   <summary xml:lang="nl">Eenvoudige sporttrainer</summary>
   <summary xml:lang="pt">Treinador Desportivo Simples</summary>
   <summary xml:lang="sk">Jednoduchý športový tréner</summary>
+  <summary xml:lang="sl">Preprost športni trener</summary>
   <summary xml:lang="sv">Enkel sporttränare</summary>
   <summary xml:lang="uk">Простий спортивний тренер</summary>
   <summary xml:lang="x-test">xxSimple Sport Trainerxx</summary>
@@ -48,6 +50,7 @@
     <p xml:lang="ko">보디빌딩, 스트레칭 등 트레이닝 활동을 돕는 프로그램</p>
     <p xml:lang="nl">Een eenvoudige toepassing om te helpen bij sportoefeningen om te trainen bodybuilding, stretchen, ...).</p>
     <p xml:lang="pt">Uma aplicação simples que ajuda a fazer alguns exercícios desportivos para treinar (musculação, alongamentos, ...).</p>
+    <p xml:lang="sl">Preprost program za lažje treniranje športnih vadb (bodybuilding, raztezanje, ...).</p>
     <p xml:lang="sv">Ett enkelt program för att hjälpa till med sportövningar för att träna (kroppsbyggnad, stretching, ...)</p>
     <p xml:lang="uk">Проста програма, яка допоможе вам тренуватися (бодібілдинґ, зарядка тощо)</p>
     <p xml:lang="x-test">xxA simple application to help doing sport exercises to train (bodybuilding, stretching, ...).xx</p>
