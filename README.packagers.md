@@ -4,9 +4,11 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 -->
 
+# Dependencies
+
 Trainer has the following dependencies:
 
--- REQUIRED:
+## REQUIRED:
 
  * Qt5Qml
  * Qt5Quick
@@ -25,3 +27,20 @@ Trainer has the following dependencies:
 Please consider packaging Trainer with all its recommended dependencies. Even if they are not required, a nice fallback is not always implemented and user experience may suffer a lot.
 
 Thanks in advance for your work.
+
+# Build instructions
+
+Trainer can be compiled like any other CMake project:
+
+```
+$ cmake -B build -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
+$ cmake --build build
+$ DESTDIR="/path/to/install/to" cmake --build build --target install
+```
+
+Tests can be ran too:
+
+```
+$ cd build
+$ xvfb-run ctest
+```
