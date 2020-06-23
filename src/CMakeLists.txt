@@ -38,3 +38,5 @@ set(QML_IMPORT_PATH ${CMAKE_BINARY_DIR}/bin CACHE INTERNAL "qml import path" FOR
 if (ANDROID)
     kirigami_package_breeze_icons(ICONS trainer)
 endif()
+
+install(TARGETS trainer ${INSTALL_TARGETS_DEFAULT_ARGS})
