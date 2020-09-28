@@ -13,6 +13,7 @@
   <name xml:lang="ca-valencia">Entrenador</name>
   <name xml:lang="cs">Trainer</name>
   <name xml:lang="de">Trainer</name>
+  <name xml:lang="en-GB">Trainer</name>
   <name xml:lang="es">Trainer</name>
   <name xml:lang="et">Treener</name>
   <name xml:lang="fr">Trainer</name>
@@ -30,6 +31,7 @@
   <summary>Simple Sport Trainer</summary>
   <summary xml:lang="ca">Un entrenador esportiu senzill</summary>
   <summary xml:lang="ca-valencia">Un entrenador esportiu senzill</summary>
+  <summary xml:lang="en-GB">Simple Sport Trainer</summary>
   <summary xml:lang="es">Sencillo entrenador deportivo</summary>
   <summary xml:lang="et">Lihtne sporditreener</summary>
   <summary xml:lang="fr">Coach sportif simple</summary>
@@ -48,6 +50,7 @@
     <p> A simple application to help doing sport exercises to train (bodybuilding, stretching, ...). </p>
     <p xml:lang="ca">Una aplicació per a ajudar a fer exercicis esportius d'entrenament (tonificació, estiraments...)</p>
     <p xml:lang="ca-valencia">Una aplicació per a ajudar a fer exercicis esportius d'entrenament (tonificació, estiraments...)</p>
+    <p xml:lang="en-GB">A simple application to help doing sport exercises to train (bodybuilding, stretching, ...).</p>
     <p xml:lang="es">Una sencilla aplicación para ayudarle a hacer ejercicios de entrenamiento (musculación, estiramientos, etc.).</p>
     <p xml:lang="et">Lihtne rakendus, mis aitab sooritada spordiharjutusi (venitused, kõutreening jms)</p>
     <p xml:lang="fr">Une application simple pour vous aider à faire des exercices sportifs lors de vos entraînements (musculation, étirements, ...).</p>
