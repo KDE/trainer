@@ -5,6 +5,7 @@ Exec=trainer %U
 GenericName=Sport Coach
 GenericName[ca]=Entrenador esportiu
 GenericName[ca@valencia]=Entrenador esportiu
+GenericName[de]=Sporttrainer
 GenericName[en_GB]=Sport Coach
 GenericName[es]=Entrenador deportivo
 GenericName[et]=Sporditreener
